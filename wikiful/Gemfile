@@ -32,6 +32,9 @@ group :doc do
   gem 'sdoc', require: false
 end
 
+# add faker to generate seeds.rb file
+gem 'faker'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
 
