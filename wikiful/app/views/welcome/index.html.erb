@@ -3,7 +3,7 @@
 <% @newest_articles.each do |article| %>
 	<div>
 		<h3><%= article.title %></h3>
-		<p>Published on <%= article.created_at.strftime('%b %d, %Y') %></p>
+		<p>Published on <%= l(article.created_at) %></p>
 		<p>Categorized under: <%= article.categories.each do |category| %>
 							<%= category.name %>&nbsp;
 							<% end %>

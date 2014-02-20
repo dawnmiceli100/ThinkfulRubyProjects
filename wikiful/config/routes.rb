@@ -1,5 +1,6 @@
 Wikiful::Application.routes.draw do
   get "welcome/index"
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
@@ -7,7 +8,7 @@ Wikiful::Application.routes.draw do
   root 'welcome#index'
   resources :articles
   resources :categories
-  # resources :welcome
+  
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
