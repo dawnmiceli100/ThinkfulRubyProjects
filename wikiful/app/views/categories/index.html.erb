@@ -1,8 +1,13 @@
-<h1>Article Categories</h1>
-<ul>
-	<% @categories.each do |category| %>
-		<div>
-			<h3><%= link_to category.name, category %></h3>	
-		</div>
-	<% end %>	
-</ul>	
+<div class="page-header">
+	<h1>Article Categories</h1>
+</div>
+
+<div class="page-content">
+	<ul>
+		<% @categories.each do |category| %>
+			<div>
+				<h4><%= link_to category.name, category %></h4>	
+			</div>
+		<% end %>	
+	</ul>	
+</div>	

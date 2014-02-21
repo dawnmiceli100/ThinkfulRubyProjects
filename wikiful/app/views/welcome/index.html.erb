@@ -1,13 +1,30 @@
-<h1>Welcome To Wikiful</h1>
-<h2>Here are the most recent articles.</h2>
-<% @newest_articles.each do |article| %>
-	<div>
-		<h3><%= article.title %></h3>
-		<p>Published on <%= l(article.created_at) %></p>
-		<p>Categorized under: <%= article.categories.each do |category| %>
-							<%= category.name %>&nbsp;
-							<% end %>
-		</p>
-		<p><%= truncate(article.content,length: 100) %></p>
-	</div>
-<% end %>	
+<div class="page-header">
+
+	<h1>Welcome To Wikiful</h1>
+
+</div>	
+
+<div class="page-content">
+
+	<h2 class="article-header">Recent articles:</h2>
+
+	<% @newest_articles.each do |article| %>
+		<div class="article-box">
+
+			<h4><%= link_to article.title, article %></h4>
+
+			<div class="article-summary">
+				<p>Published on <%= l(article.created_at, :format => :date_only) %></p>
+
+				<p>Categories: <% article.categories.each do |category| %>
+									<%= link_to category.name, category %>&nbsp
+									<% end %>
+				</p>
+
+				<p><%= truncate(article.content,length: 200) %></p>
+			</div>	
+
+		</div>
+
+	<% end %>	
+</div>	

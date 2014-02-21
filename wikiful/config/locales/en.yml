@@ -81,4 +81,5 @@ en:
       default: ! '%a, %b %d %Y %I:%M:%S %p %Z'
       long: ! '%B %d, %Y %I:%M %p'
       short: ! '%b %d %I:%M %p'
+      date_only: ! '%B %d, %Y'
     pm: pm

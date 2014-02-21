@@ -11,3 +11,36 @@
  *= require_self
  *= require_tree .
  */
+.span9 {
+	margin-bottom: 20px;
+}
+
+.article-header {
+/*	padding: 5px; */
+/*	background-color: #C2D6D6; */
+}
+
+.article-box {
+	padding: 5px;
+}
+
+.article-summary {
+	padding-left: 20px;
+}
+
+.sidebar {
+	background-color: #C2D6D6;
+}
+
+.sidebar-contents {
+	padding: 5px;
+}
+
+.page-content {
+	background-color: #F4F6F6;
+	padding: 20px;
+}
+
+.article-title {
+	margin-bottom: 10px;
+}
